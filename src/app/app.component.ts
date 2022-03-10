@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'gamecontrol-app';
+  currentShowedNumber = []
+  
+  onNumberReceived(receivedNumber: number) {
+    this.currentShowedNumber.push(receivedNumber)
+  }
+
 }
